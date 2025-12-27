@@ -1,10 +1,10 @@
-# 🚀 PHP MVC Secure Template
+#  PHP MVC Secure Template
 
 Un framework MVC ligero, robusto y seguro construido con PHP nativo. Diseñado para servir como base sólida para aplicaciones web, pre-configurado con un entorno Docker (XAMPP) y mejores prácticas de seguridad.
 
 ---
 
-## 🔥 Características Principales
+##  Características Principales
 
 - **Arquitectura MVC**: Separación clara de responsabilidades (Modelos, Vistas, Controladores).
 - **Seguridad Primero**:
@@ -21,15 +21,15 @@ Un framework MVC ligero, robusto y seguro construido con PHP nativo. Diseñado p
 - [Docker](https://www.docker.com/) y [Docker Compose](https://docs.docker.com/compose/).
 - O (si no usas Docker): Servidor Web (Apache/Nginx), PHP 8.0+ y MySQL/MariaDB.
 
-## 🚀 Instalación y Uso
+##  Instalación y Uso
 
 ### 1. Clonar el repositorio
 ```bash
-git clone <tu-repositorio>
-cd docker-xampp
+git clone https://github.com/GabxSup/Encrypted-Login---php-template-
+cd Encrypted-Login---php-template-
 ```
 
-### 2. Iniciar el entorno (Docker)
+### 2. Iniciar el entorno Docker (Opcional) 
 Este proyecto incluye una configuración completa de `docker-compose`.
 ```bash
 docker-compose up -d --build
@@ -59,7 +59,7 @@ CREATE TABLE users (
 );
 ```
 
-## 📂 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 /www
@@ -73,7 +73,7 @@ CREATE TABLE users (
 └── routes.php          # Definición de rutas
 ```
 
-## 🛡 Seguridad Implementada
+##  Seguridad Implementada
 
 ### Autenticación
 El sistema utiliza `password_hash()` y `password_verify()` para manejar contraseñas de forma segura. Nunca se almacenan contraseñas en texto plano.
@@ -88,11 +88,11 @@ public function index() {
 }
 ```
 
-## 📝 Personalización
+##  Personalización
 
 1. **Agregar una nueva ruta**: Edita `www/routes.php`.
 2. **Crear un controlador**: Hereda de `BaseController` en `www/controllers/`.
 3. **Crear un modelo**: Usa `www/models/` y conecta con `$this->db`.
 
 ---
-⚡ *Desarrollado como template base para proyectos ágiles y seguros.*
+ *Desarrollado como template base para proyectos ágiles y seguros, por un internet mas seguro*
