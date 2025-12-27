@@ -1,0 +1,53 @@
+services:
+  mariadb:
+    image: mariadb:11
+    container_name: mariadb_db
+    restart: unless-stopped
+
+    env_file:
+      - .env
+
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+
+    # ⚠️ SOLO deja esto si necesitas DBeaver desde el host
+    ports:
+      - "3310:3306"
+
+    volumes:
+      - dbdata:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    restart: unless-stopped
+    depends_on:
+      - mariadb
+
+    environment:
+      PMA_HOST: mariadb
+      PMA_USER: root
+      PMA_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+
+    ports:
+      - "8080:80"
+
+  php:
+    build: .
+    container_name: php_app
+    restart: unless-stopped
+
+    volumes:
+      - ./www:/var/www/html
+
+    ports:
+      - "8000:80"
+
+    depends_on:
+      - mariadb
+
+volumes:
+  dbdata:
