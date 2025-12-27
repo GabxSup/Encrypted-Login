@@ -25,8 +25,8 @@ Un framework MVC ligero, robusto y seguro construido con PHP nativo. Diseñado p
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/GabxSup/Encrypted-Login---php-template-
-cd Encrypted-Login---php-template-
+git clone https://github.com/GabxSup/Encrypted-Login
+cd Encrypted-Login
 ```
 
 ### 2. Iniciar el entorno Docker (Opcional) 
