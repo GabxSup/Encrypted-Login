@@ -30,6 +30,13 @@
     <div class="container" style="max-width: 400px;">
         <h1>Iniciar Sesión</h1>
 
+        <?php if (isset($_SESSION['error'])): ?>
+            <div class="alert alert-error">
+                <?= $_SESSION['error'] ?>
+                <?php unset($_SESSION['error']); ?>
+            </div>
+        <?php endif; ?>
+
         <form method="POST" action="/login">
             <input type="hidden" name="_csrf" value="<?= csrf_token() ?>">
 
