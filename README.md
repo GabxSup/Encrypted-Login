@@ -1,4 +1,4 @@
-# 🛡️ Secure PHP Project
+#  Secure PHP Project
 
 ![PHP Version](https://img.shields.io/badge/PHP-8.0%2B-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
@@ -8,9 +8,9 @@
 
 ---
 
-## 🚀 Características Principales
+##  Características Principales
 
-### 🔒 Seguridad Avanzada
+###  Seguridad Avanzada
 *   **Autenticación Robusta:** Login seguro con hasheo de contraseñas usando **Argon2id**.
 *   **Rate Limiting:** Protección automática contra fuerza bruta (bloqueo de IP por 15 min tras 10 intentos fallidos).
 *   **Protección CSRF:** Tokens criptográficos únicos por sesión en todos los formularios.
@@ -18,7 +18,7 @@
 *   **Cookies Seguras:** Banderas `HttpOnly`, `Secure` y `SameSite=Strict` preconfiguradas.
 *   **Logs de Auditoría:** Registro detallado de actividad (Login, Logout, Intentos fallidos).
 
-### 🎨 Interfaz de Usuario (UI/UX)
+###  Interfaz de Usuario (UI/UX)
 *   **Diseño Glassmorphism:** Interfaz moderna con efectos de desenfoque y modo oscuro.
 *   **Dashboard Profesional:** Panel con sidebar, estadísticas visuales y cards.
 *   **Responsive:** Adaptable a cualquier dispositivo.
@@ -32,7 +32,7 @@
 
 ---
 
-## 🛠️ Instalación y Configuración
+##  Instalación y Configuración
 
 ### 1. Requisitos
 *   Servidor Web (Apache/Nginx)
@@ -57,7 +57,7 @@ Para activar el botón de "Iniciar con Google":
 
 ---
 
-## 📂 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```text
 /www
