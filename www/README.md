@@ -23,8 +23,8 @@ This project is a secure PHP dashboard application running on Docker. It feature
 
 1.  **Clone the repository**:
     ```bash
-    git clone <repository_url>
-    cd docker-xampp
+    git clone https://github.com/GabxSup/Encrypted-Login
+    cd Encrypted-Login
     ```
 
 2.  **Start the containers**:
